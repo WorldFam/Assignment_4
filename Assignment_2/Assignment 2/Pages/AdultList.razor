@@ -1,0 +1,136 @@
+@page "/AdultList"
+@using Assignment_1.Data
+
+@using global::Models
+@using System.ComponentModel.DataAnnotations
+@using Assignment_2.Data
+
+@inject ICloudService FileContext
+@inject NavigationManager NavigationManager
+
+<h1 xmlns="http://www.w3.org/1999/html">Adult list</h1>
+<p>
+    Filter by First Name: <input type="text" @oninput="@((arg) => FilterByName(arg))" style="width:150px"/>
+</p>
+<span style="color: red"><b>@error</b></span>
+@if (todosToShow == null) {
+    <p>
+        <em>Loading...</em>
+    </p>
+} else if (!todosToShow.Any()) {
+    <p>
+        <em>No ToDo items exist. Please add some.</em>
+    </p>
+} else {
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>JobTitle</th>
+            <th>Hair Color</th>
+            <th>Eye Color</th>
+            <th>Age</th>
+            <th>Weight</th>
+            <th>Height</th>
+            <th>Sex</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in todosToShow) {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.JobTitle</td>
+                <td>@item.HairColor</td>
+                <td>@item.EyeColor</td>
+                <td>@item.Age</td>
+                <td>@item.Weight</td>
+                <td>@item.Height</td>
+                <td>@item.Sex</td>
+                <td>
+                    <button @onclick="@(() => EditAdult(item.Id))">
+                        <i class="oi oi-task" style="color:blue"/>
+                    </button>
+
+                </td>
+                    <td>
+                        <button @onclick="@(() => RemoveTodo(item.Id))">
+                            <i class="oi oi-trash" style="color:red"/>
+                        </button>
+                    </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IList<Adult> todosToShow;
+    private IList<Adult> allTodos;
+
+    private string filterByName;
+    private string error;
+    
+    [CascadingParameter] Task<AuthenticationState> authenticationStateTask { get; set; }
+    
+    private void FilterByName(ChangeEventArgs changeEventArgs)
+    {
+        try
+        {
+            filterByName = changeEventArgs.Value.ToString();
+        } catch (Exception e) { }
+        ExecuteFilter();
+    }
+    
+    private void ExecuteFilter() {
+        todosToShow = allTodos.Where(t => 
+            (filterByName != "" && t.FirstName.Equals(filterByName,StringComparison.OrdinalIgnoreCase)  || filterByName == "") 
+            ).ToList();
+    }
+
+
+    protected override async Task OnInitializedAsync() {
+        allTodos = await FileContext.GetAdultAsync();
+        todosToShow = allTodos;
+    }
+
+    private async Task RemoveTodo(int todoId)
+    {
+        var authState = await authenticationStateTask;
+        var user = authState.User;
+        if (user.Identity.IsAuthenticated)
+        {
+            Adult todoToRemove = todosToShow.First(t => t.Id == todoId);
+            await FileContext.RemoveAdultAsync(todoId);
+            todosToShow.Remove(todoToRemove);
+        }
+        else
+        {
+            error = "Please Login!";
+            Console.WriteLine("You're not logged in.");
+        }                                                                           
+    }
+    
+    private async Task EditAdult(int value)
+    {
+        var authState = await authenticationStateTask;
+        var user = authState.User;
+        if (user.Identity.IsAuthenticated)
+        {
+            var result = value.ToString();
+            NavigationManager.NavigateTo($"/EditAdult/{result}");
+        }
+        else
+        {
+            error = "Please Login!";
+            Console.WriteLine("You're not logged in.");
+        }
+    }
+  
+    
+}

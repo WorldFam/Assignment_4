@@ -1,0 +1,21 @@
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\Assignment 3 API.exe
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\Assignment 3 API.deps.json
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\Assignment 3 API.runtimeconfig.json
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\Assignment 3 API.runtimeconfig.dev.json
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\Assignment 3 API.dll
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\Assignment 3 API.pdb
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.csprojAssemblyReference.cache
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.AssemblyInfoInputs.cache
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.AssemblyInfo.cs
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.csproj.CoreCompileInputs.cache
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.RazorTargetAssemblyInfo.cache
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\staticwebassets\Assignment 3 API.StaticWebAssets.Manifest.cache
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\staticwebassets\Assignment 3 API.StaticWebAssets.xml
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.dll
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.pdb
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\obj\Debug\netcoreapp3.1\Assignment 3 API.genruntimeconfig.cache
+C:\Users\Ceslov\RiderProjects\Assignment 3 API\Assignment 3 API\bin\Debug\netcoreapp3.1\adults.json

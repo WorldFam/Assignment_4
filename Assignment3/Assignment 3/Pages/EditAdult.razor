@@ -1,0 +1,132 @@
+﻿﻿
+@using global::Models
+@using Assignment_1.Data
+@using System.Xml
+
+@inject ICloudService FileContext
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+@page "/EditAdult/{value}"
+<EditForm Model="@adultItem" OnValidSubmit="@EditAdultAsync">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <div> &nbsp;</div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-1"><p class="my-1 mx-1 size">First Name:</p></div>
+            <div class="col-5"> <InputText type="text" class="form-control" @bind-Value="adultItem.FirstName"/></div>
+            <div class="col-1"><p class="my-1 mx-1 size">Last Name:</p></div>
+            <div class="col-5" > <InputText type="text" class="form-control" @bind-Value="adultItem.LastName"/></div>
+        </div>
+        <div> &nbsp;</div>
+        <div class="row">
+            <div class="col">
+                <InputSelect  @bind-Value="adultItem.HairColor" class="form-control">
+                    <option disabled selected>Select Available Hair Color</option>
+                    <option id="blond" value="Blond">Blond</option>
+                    <option id="red" value="Red">Red</option>
+                    <option class="brown" value="Brown">Brown</option>
+                    <option id="black" value="Black">Black</option>
+                    <option id="white" value="White">White</option>
+                    <option class="grey" value="Grey">Grey</option>
+                    <option class="blue" value="Blue">Blue</option>
+                    <option class="green" value="Green">Green</option>
+                    <option id="leverpostej" value="Leverpostej">Leverpostej</option>
+                </InputSelect>   
+            </div>
+            <div class="col">
+                <InputSelect @bind-Value="adultItem.EyeColor"  class="form-control" >
+                    <option disabled selected>Select Available Eye Color</option>
+                    <option class="brown" value="Brown">Brown</option>
+                    <option id="amber" value="Aamber">Amber</option>
+                    <option id="hazel" value="Hazel">Hazel</option>
+                    <option class="grey" value="Grey">Grey</option>
+                    <option class="blue" value="Blue">Blue</option>
+                    <option class="green" value="Green">Green</option>
+                </InputSelect>       
+            </div>
+        </div>
+        <div> &nbsp;</div>
+        <div class="row">
+            <div class="col-1">
+                <label class="my-1 mx-4">Age:</label>
+            </div>
+            <div class="col-5">
+                <InputNumber @bind-Value="adultItem.Age" class="form-control"/>
+            </div>
+            <div class="col-1">
+                <label class="my-1 mr-2">Weight:</label>
+            </div>
+            <div class="col-5">
+                <InputNumber rows="1" @bind-Value="adultItem.Weight" class="form-control"/>
+            </div>
+        </div>
+        <div> &nbsp;</div>
+        <div class="row">
+            <div class="col-1"><label class="my-1 mx-4">Height:</label></div>
+            <div class="col-5"><InputNumber @bind-Value="adultItem.Height" class="form-control"/></div>
+            <div class="col-2"><label>Select gender:</label></div>
+            @foreach (var item in new string[] { "Male","Female"})
+                        {
+                            <div class="form-check col-2">
+                                <input type="radio" name="technology" id="@item" value="@item" @onchange="RadioSelection" checked=@(RadioValue.Equals(item, StringComparison.OrdinalIgnoreCase))/>
+                                <label for="@item">@item</label>
+                            </div>
+                        }
+        </div>
+        <div>
+            <div> &nbsp;</div>
+            <div class="row">
+                <div class="col-1"><label>Job Title:</label></div>
+                <div class="col-8"><InputText  @bind-Value="adultItem.JobTitle" class="form-control"/> </div>
+                <div class ="col-3">
+                    <button  class="btn btn-primary mb-2 button1" @onclick="OnSubmit" type="submit">Change</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</EditForm>
+@code {
+
+    public Adult adultItem = new Adult();
+    public Adult adult;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var stringId = value;
+        int Id = int.Parse(stringId);
+        adultItem = await FileContext.GetAdultByIdAsync(Id);
+        adult = adultItem;
+    }
+    
+    private async Task EditAdultAsync()
+    {
+        await FileContext.UpdateAdultAsync(adult);
+        Console.Write(adult);
+        NavigationManager.NavigateTo("/AdultList");
+    }
+    [Parameter]
+    public string value { get; set; }
+     
+    
+    string RadioValue = "M" ;
+    void RadioSelection(ChangeEventArgs args)
+    {
+        RadioValue = args.Value.ToString();
+        if (RadioValue.Equals("Female"))
+        {
+            RadioValue = "F";
+        }
+        else if (RadioValue.Equals("Male"))
+        {
+            RadioValue = "M";
+        }
+    }
+
+    void OnSubmit()
+    {
+        adultItem.Sex = RadioValue;
+    }
+    
+}

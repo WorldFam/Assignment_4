@@ -1,0 +1,49 @@
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.csprojAssemblyReference.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.AssemblyInfoInputs.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.AssemblyInfo.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.csproj.CoreCompileInputs.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.RazorComponent.input.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\AddAdult.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\AdultList.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\EditAdult.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Login.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\RazorDeclaration\Assignment 2.dll
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.TagHelpers.input.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.TagHelpers.output.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.RazorCoreGenerate.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Assignment 2.exe
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Assignment 2.deps.json
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Assignment 2.runtimeconfig.json
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Assignment 2.runtimeconfig.dev.json
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Assignment 2.dll
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Assignment 2.pdb
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Assignment 2.Views.dll
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\bin\Debug\netcoreapp3.1\Assignment 2.Views.pdb
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\Pages\AddAdult.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\Pages\AdultList.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\Pages\EditAdult.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\Pages\Login.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.RazorAssemblyInfo.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.RazorAssemblyInfo.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.RazorTargetAssemblyInfo.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.RazorTargetAssemblyInfo.cs
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.Views.pdb
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\staticwebassets\Assignment 2.StaticWebAssets.Manifest.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\staticwebassets\Assignment 2.StaticWebAssets.xml
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.dll
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.pdb
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.genruntimeconfig.cache
+C:\Users\Ceslov\RiderProjects\Assignment 2\Assignment 2\obj\Debug\netcoreapp3.1\Assignment 2.csproj.CopyComplete
